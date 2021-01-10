@@ -149,6 +149,10 @@ static bool is_final_result(const char * const response)
                 return true;
             }
             return false;
+        case '0': // Short result code format for 'OK'
+            return true
+        case '4': // Short result code format for 'ERROR'
+            return true
         default:
             return false;
     }
