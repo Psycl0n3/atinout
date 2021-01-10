@@ -127,9 +127,7 @@ static bool is_final_result(const char * const response)
             if (strcmp(&response[1], "USY\n") == 0) {
                 return true;
             }
-
             return false;
-
         case 'E':
             if (strcmp(&response[1], "RROR\n") == 0) {
                 return true;
@@ -150,7 +148,7 @@ static bool is_final_result(const char * const response)
             if (strcmp(&response[1], "K\n") == 0) {
                 return true;
             }
-            // fallthrough
+            return false;
         default:
             return false;
     }
