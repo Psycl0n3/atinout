@@ -12,6 +12,16 @@ Minimum example:
 See the manual for more details on operation.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Installation (Debian):
+
+sudo apt-get install ruby-dev
+sudo gem install ronn
+git clone https://github.com/Psycl0n3/atinout.git
+cd ./atinout/
+make atinout atinout.1 atinout.1.html
+sudo make install
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you have not yet read the ITU V.250 specification about AT commands,
 by all means go to http://www.itu.int/rec/T-REC-V.250-200307-I/en and
